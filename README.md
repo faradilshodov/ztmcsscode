@@ -1,0 +1,1 @@
+This is practice project to refresh CSS skills and learn something new
