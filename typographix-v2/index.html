@@ -7,9 +7,27 @@
 
     <!-- Zero to Mastery Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="scrollbar.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <div class="nav-wrapper">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#section-1" onclick="hideMenu()">Home</a></li>
+                <li><a href="#section-2" onclick="hideMenu()">About</a></li>
+                <li><a href="#section-3" onclick="hideMenu()">Gallery</a></li>
+                <li><a href="#section-4" onclick="hideMenu()">Blog</a></li>
+                <li><a href="#section-5" onclick="hideMenu()">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
     <main>
         
         <!-- Section 1 -->
@@ -19,7 +37,7 @@
                 <span class="toggle-text">Light Mode</span>
                 <i class="fas fa-sun"></i>
             </div>
-            
+
             <!-- Header -->
             <header class="header">
                 <h1>Typographix</h1>
@@ -35,9 +53,7 @@
         
         <!-- Section 2 -->
         <section id="section-2">
-            <div>
-                <h2>Cutting Edge Image  & Text Generation</h2>
-            </div>
+            <h2>Cutting Edge Image  & Text Generation</h2>
             <img src="https://unsplash.com/photos/p0j-mE6mGo4/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzA5NzYwMjE3fA&force=true&w=2400" alt="Retro Gaming Setup" class="main-image">
         </section>
         
