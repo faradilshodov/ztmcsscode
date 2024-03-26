@@ -32,9 +32,5 @@ let repeatedMessage = messageHTML.repeat(10)
 // Set the repeated messages as the content
 bannerContent.innerHTML = repeatedMessage + repeatedMessage;
 
-function scrollBanner() {
-    
-}
-
 // Houdini worklet
 CSS.paintWorklet.addModule('https://unpkg.com/parallelowow@0.1.5/parallelowow.js')
