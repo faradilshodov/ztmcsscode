@@ -28,7 +28,7 @@ section {
 }
 
 /* Navigation */
-/* .menu-icon {
+.menu-icon {
     position: fixed;
     top: 15px;
     left: 15px;
@@ -43,7 +43,7 @@ section {
 
     .menu-icon div {
         height: 0.25rem;
-        background-color: var(--on-background);
+        background-color: white;
         transition: all 0.3s ease-in-out;
     }
 
@@ -64,14 +64,13 @@ section {
     position: fixed;
     top: 0;
     left: 0;
-    background: var(--background);
     width: 100%;
     z-index: 10;
 }
 
 nav {
     height: 100%;
-    color: var(--on-background);
+    color: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -95,9 +94,19 @@ nav ul li {
     margin: 1rem 0;
 }
 
+nav a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+        padding-bottom: 5px;
+        border-bottom: 5px solid white;
+    }
+}
+
 nav.active {
     transform: translateX(0);
-} */
+}
 
 /* Home Section ----------------- */
 #home {
@@ -311,4 +320,106 @@ nav.active {
     &:hover {
         background-color: #333;
     }
+}
+
+/* Contact Section */
+#contact {
+    --parallelowow-tile-width: 60;
+    --parallelowow-base-color: #FF5566;
+    --parallelowow-color-step: 0;
+    --parallelowow-probability: 0.25;
+    --parallelowow-stroke-weight: 0.5;
+    background: paint(parallelowow), var(--parallelowow-base-color);
+    color: white;
+}
+
+.contact-container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+}
+
+.banner-link {
+    display: block;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+.banner {
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    width: 100vw;
+    height: 50px;
+    background-color: #7d0e0e;
+    overflow: hidden;
+    transform: rotate(-5deg);
+    transform-origin: 0 100%;
+    display: flex;
+    align-items: center;
+}
+
+.banner-content {
+    white-space: nowrap;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    animation: scrollBanner 60s linear infinite;
+    transition: font-size .3s ease-in-out;
+    font-size: 1rem;
+
+    &:hover {
+        font-size: 1.05rem;
+    }
+}
+
+@keyframes scrollBanner {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.contact-message {
+    margin-right: 50px;
+}
+
+/* Footer */
+footer {
+    position: relative;
+}
+
+.social-media-icons {
+    width: 100%;
+    font-size: 30px;
+    position: absolute;
+    bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+    .social-media-icons i {
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .social-media-icons i:not(:first-child) {
+        margin-left: 10px;
+    }
+
+footer small {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
 }
