@@ -338,7 +338,7 @@ nav.active {
     place-items: center;
     height: 100vh;
     position: relative;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
 }
 
 .banner-link {
@@ -436,6 +436,10 @@ footer small {
         width: 100%;
         background: black;
     }
+
+    nav ul {
+        padding-left: 0;
+    }
 }
 
 /* Tablet Vertical (Large) */
@@ -465,7 +469,6 @@ footer small {
     }
 
     .text-box {
-        width: 75ch;
         padding: 50px;
     }
 
@@ -498,11 +501,6 @@ footer small {
 
 /* Smartphone Vertical */
 @media screen and (max-width: 600px) {
-    nav ul {
-        position: relative;
-        left: -20px;
-    }
-
     .section-title h2 {
         font-size: 3rem;
     }
@@ -515,5 +513,14 @@ footer small {
     .box1, .box2, .box3, .box4, .box5, .box6 {
         grid-area: unset;
         grid-column: 1;
+    }
+
+    .text-box{
+        width: 90vw;
+        padding: 40px;
+    }
+
+    .banner {
+        transform: rotate(0deg);
     }
 }
