@@ -1,0 +1,14 @@
+{
+  "name": "ztmcsscode",
+  "version": "1.0.0",
+  "description": "This is practice project to refresh CSS skills and learn something new",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fara Dilshodov",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.74.1"
+  }
+}
