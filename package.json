@@ -4,7 +4,9 @@
   "description": "This is practice project to refresh CSS skills and learn something new",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-dev": "sass --watch --source-map typographix-blog/scss/main.scss:typographix-blog/css/compiled_style.css",
+    "sass-prod": "sass --no-source-map --style=compressed typographix-blog/scss/main.scss:typographix-blog/css/compiled_style.css"
   },
   "author": "Fara Dilshodov",
   "license": "ISC",

@@ -13,9 +13,9 @@
     background: rgb(160, 160, 160);
     border-radius: 5px;
     min-height: 40px;
+
+    &:hover {
+        background: gray;
+    }
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: gray;
-}
